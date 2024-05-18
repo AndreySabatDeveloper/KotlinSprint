@@ -10,5 +10,4 @@ fun main() {
     minute = 55
     println("Время посадки-" + hour + ':' + minute)
 
-
 }
