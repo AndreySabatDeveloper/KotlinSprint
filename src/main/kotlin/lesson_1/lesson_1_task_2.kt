@@ -5,8 +5,8 @@ fun main() {
     val congratulationsText = "Спасибо за покупку товара, приходите ещё!"
     println(numberOfOrders)
     println(congratulationsText)
-    // val numberOfEmployees = 2000
+    var numberOfEmployees = 2000
     // println(numberOfEmployees)
-    val numberOfEmloyees = 1999
-    println(numberOfEmloyees)
+    numberOfEmployees = 1999
+    println(numberOfEmployees)
 }
