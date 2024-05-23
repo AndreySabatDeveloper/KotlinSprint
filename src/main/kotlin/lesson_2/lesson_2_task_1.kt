@@ -5,8 +5,9 @@ fun main() {
     val assessmentOfTheSecondStudent = 4.0
     val assessmentOfTheThirdStudent = 3.0
     val assessmentOfTheFourthStudent = 5.0
+    val totalStudents = 4
     val averageRating =
-        (assessmentOfTheFirstStudent + assessmentOfTheSecondStudent + assessmentOfTheThirdStudent + assessmentOfTheFourthStudent) / 4
+        (assessmentOfTheFirstStudent + assessmentOfTheSecondStudent + assessmentOfTheThirdStudent + assessmentOfTheFourthStudent) / totalStudents
     println(averageRating)
 }
 
