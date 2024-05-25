@@ -5,14 +5,7 @@ fun main() {
     val salaryOfPermanentEmployees = 30_000
     val numberOfInterns = 30
     val salaryOfInterns = 20_000
-    val theCostOfPayingTheSalariesOfPermanentWorkers = numberOfPermanentEmployees * salaryOfPermanentEmployees
-    val theCostOfPayingTheSalariesOfInters = numberOfInterns * salaryOfInterns
-    val totalSalaryExpensesAfterTheArrivalOfInterns =
-        theCostOfPayingTheSalariesOfPermanentWorkers + theCostOfPayingTheSalariesOfInters
-    val totalNumberOfEmployees = numberOfPermanentEmployees + numberOfInterns
-    val theAverageSalaryOfOneEmployeeAfterThePlacementOfIntern =
-        totalSalaryExpensesAfterTheArrivalOfInterns / totalNumberOfEmployees
-    println("Расходы на выплату зарплаты постоянных сотрудников - $theCostOfPayingTheSalariesOfPermanentWorkers рублей")
-    println("Общие расходы по ЗП после прихода стажеров - $totalSalaryExpensesAfterTheArrivalOfInterns рублей")
-    println("Средняя ЗП одного сотрудника после устройства стажеров - $theAverageSalaryOfOneEmployeeAfterThePlacementOfIntern рублей")
+    println("Расходы на выплату зарплаты постоянных сотрудников - ${numberOfPermanentEmployees * salaryOfPermanentEmployees} рублей")
+    println("Общие расходы по ЗП после прихода стажеров - ${numberOfPermanentEmployees * salaryOfPermanentEmployees + numberOfInterns * salaryOfInterns} рублей")
+    println("Средняя ЗП одного сотрудника после устройства стажеров - ${(numberOfPermanentEmployees * salaryOfPermanentEmployees + numberOfInterns * salaryOfInterns) / (numberOfPermanentEmployees + numberOfInterns)} рублей")
 }
